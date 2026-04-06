@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dairyfarm</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='homepage.css')}}">
+</head>
+<body>
+
+    <div id = "firstbox"></div>
+
+    <div class = "slider">
+
+        <img src="{{url_for('static', filename = 'milk5.jpg')}}" alt="milkbottle">
+        <img src="{{url_for('static', filename = 'coffee_shop_1_4.png')}}" alt="coffeshop">
+        
+        
+    </div>
+
+    <div id = "usercountbox"><h2 id = "usercount">0+ <br> user </h2></div>
+
+<!-- top options -->
+    <div  id = "orderbox">
+
+        <form method="POST" action="/subscription">
+            <button id = "Membership"  >Membership</button>
+        </form>
+        <div> <a id="contactustext" href="">Contactus</a></div>
+        <div> <a id="Abouttext" href="">About</a></div>
+        <div> <a id="Logouttext" href="{{url_for('logout')}}">Logout</a></div>
+    </div>
+        
+    <div id="milkbottelquotebox"></div>
+    <div id="milkbottles"><img src="{{url_for('static',filename = 'milk5bottle.png')}}" alt="milk bottles"></div>
+    <div id="meltedmilk1"><img src="{{url_for('static',filename = 'melted_milkbg.png')}}" alt="melted milk"></div>
+    <div id="meltedmilk2"><img src="{{url_for('static',filename = 'melted_milkbg.png')}}" alt="melted milk"></div>
+    <div id="meltedmilk3"><img src="{{url_for('static',filename = 'melted_milkbg.png')}}" alt="melted milk"></div>
+    <div id="meltedmilk4"><img src="{{url_for('static',filename = 'melted_milkbg.png')}}" alt="melted milk"></div>
+
+
+    <div id = "welcomequote"><h2>Welcome</h2> </div>
+    <div id = "strightline"></div>
+    <div id = "motherlove"> Where Milk Feels Like a Mother’s Love 🤍</div> 
+    <div id = "description">“Crafted with uncompromising <span style="color: #5a4b81;">hygiene</span> and <span style="color: #5a4b81;">untouched</span> purity,<br> our milk reflects a standard beyond the ordinary. delivered with a <br> <span style="color: #5a4b81;">commitment</span> to <span style="color: #5a4b81;">excellence</span> you can trust.”</div>
+    
+     
+   
+    
+</body>
+</html>

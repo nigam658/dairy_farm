@@ -1,0 +1,58 @@
+#fullbox {
+    height: 550px;
+    margin-top: 130px;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+}
+
+#upperbox{
+    margin: auto;
+    height: 320px;
+    background-color: rgb(177, 155, 204);
+   
+}
+
+#farmquote{
+    position: absolute;   /* overlay */
+    top: 170px;
+    left: 250px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#childrenimg{
+    position: absolute;   /* overlay */
+    top: 37.6%;             /* move vertically */
+    left: 65%;            /* move horizontally */
+    transform: translate(-50%, -50%);  /* perfect center */
+    height: 240px;
+   
+}
+
+#inputformbox{
+    position: absolute;
+    top: 38%;
+    left: 30%;
+    border: 2px solid white;
+    height: 270px;
+    width: 230px;
+    background-color: rgb(5,38,69);
+
+}
+#inputbox{
+    margin-top: 45px;
+    margin-left: 20px;
+    border-radius: 50px;
+    
+}
+.hinttext{
+    margin: 5px 0;
+    color: aliceblue; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.error{
+    color: red;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

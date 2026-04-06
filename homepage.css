@@ -1,0 +1,207 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color:rgb(181, 176, 167);
+}
+
+
+
+#welcomequote{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    color:rgb(8, 18, 81);
+}
+
+#strightline{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    border-bottom:2px solid azure;
+    width: 100px;
+}
+
+#description{
+    position: absolute;
+    top: 32%;
+    left: 5%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+}
+#motherlove{
+    position: absolute;
+    top: 83%;
+    left: 40%;
+    font-family: 'Pacifico', cursive;
+    font-size: x-large;
+    color:azure;
+}
+
+#firstbox{
+    width: auto;
+    height: 70px;
+    background-color :#847b9f;
+}
+
+.slider {
+    position: relative;
+    width: 600px;
+    height: 350px;
+    overflow: hidden;
+    margin: 6% auto;
+    margin-left: 55%;
+    border-radius: 16px;
+}
+
+.slider img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: slide 20s infinite;
+}
+
+/* delay for each image */
+.slider img:nth-child(1) { animation-delay: 0s; }
+.slider img:nth-child(2) { animation-delay: 10s; }
+
+@keyframes slide {
+    0%   { opacity: 0; }
+    8%   { opacity: 1; }    /* slow smooth fade in */
+    42%  { opacity: 1; }    /* fully visible */
+    50%  { opacity: 0.7; }  /* start blending */
+    58%  { opacity: 0.3; }  /* smoother overlap */
+    66%  { opacity: 0; }    /* fade out smoothly */
+    100% { opacity: 0; }
+}
+
+
+#usercountbox{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(160, 209, 214);
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    top: 465px;
+    left: 800px;
+    
+    
+}
+#usercount{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+
+}
+
+#orderbox {
+    position: absolute;
+    display: flex;
+    top:25px;
+    left: 1150px;
+}
+
+
+#Membership {
+    color: white;
+    font-size:larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-right: 25px;
+    text-decoration: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    
+}
+
+
+#contactustext{
+    color: white;
+    font-size:larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-right: 25px;
+    text-decoration: none;
+
+}
+#Abouttext{
+    color: white;
+    font-size:larger;
+    margin-right: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+#Logouttext{
+    color: white;
+    font-size:larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+
+#milkbottelquotebox{
+    height: 193px;
+    width: 1508px;
+    background-color: 	#a58c83;
+    margin-top: 30px;
+}
+
+
+#milkbottles img {
+    position: absolute;
+    display: flex;
+    top: 68.8%;
+    width: 380px;        /* change as you want */
+    height: 193px;        /* keeps image ratio */
+    box-shadow: 2px 0px 7px rgba(0,0,0,0.3);
+}
+
+#meltedmilk1{
+    position: absolute;
+    display: flex;
+    top: 68.5%;
+    left: 23.6%;
+    width: 380px;        /* change as you want */
+    height: 120px;
+   
+}
+#meltedmilk2{
+    position: absolute;
+    display: flex;
+    top: 68.5%;
+    left: 42%;
+    width: 380px;        
+    height: 120px;
+    
+}
+
+#meltedmilk3{
+    position: absolute;
+    height: 120px;
+    display: flex;
+    top: 68.5%;
+    left: 60.1%;
+    width: 380px;
+    
+}
+
+#meltedmilk4{
+    position: absolute;
+    height: 120px;
+    display: flex;
+    top: 68.5%;
+    left: 78.5%;
+    width: 320px;
+    
+}
+    

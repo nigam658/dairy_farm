@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="stylesheet" href="{{url_for('static', filename ='login.css')}}">
+</head>
+<body>
+    <a id = "signupbox" href="/signup">Signup</a>
+    <div id = "fullbox">
+        <div id = "upperbox">
+            
+            <img  id = "childrenimg" src="{{ url_for('static',filename = 'boygirl_drink_milk_removebg.png')}}" alt="photo">
+            
+        </div>
+        
+            <h1 id = "farmquote">Login your <span style="color: rgb(4, 4, 59);">account</span><br> and <span style="color: rgb(4, 4, 59);">grow</span> with us</h1>
+
+            <div id = "inputformbox">
+                <form id = "inputbox" action="/login" method="POST">
+
+                    <p class="hinttext"> user name </p>
+                    
+                    <input style="width: 180px; border-radius: 10px; border: 2px solid black; " type="text" name = "username" >
+                    
+                    <p class="hinttext"> password </p>
+                    
+                    <input style="width: 180px; border-radius: 10px; border: 2px solid black; " type="password" name = "password" >
+
+                    <button style="width: 190px; background-color: aliceblue; border-radius: 10px; border: 2px solid black; margin-top: 50px; " type="submit"> Login </button>
+
+                    <!--flash massage print-->
+                    {% with messages = get_flashed_messages(with_categories=true) %}
+                        {% for category, msg in messages %}
+                            {% if category == "signuperror" %}
+
+                            <p class="error">{{ msg }}</p>
+                            
+                            {% endif %}
+                        {% endfor %}
+                    {% endwith %}
+
+                    <!--login error if user login with empty box-->
+                    {% with messages = get_flashed_messages(with_categories=true) %}
+                        {% for category, msg in messages %}
+                            {% if category == "loginerror" %}
+
+                            <p class="error">{{ msg }}</p>
+                            
+                            {% endif %}
+                        {% endfor %}
+                    {% endwith %}
+
+                    
+                    {% with messages = get_flashed_messages(with_categories=true) %}
+                        {% for category, msg in messages %}
+                            {% if category == "passworderror" %}
+
+                            <p class="error">{{ msg }}</p>
+                            
+                            {% endif %}
+                        {% endfor %}
+                    {% endwith %}
+
+                </form>
+                
+            </div>
+
+    </div>
+
+    
+    
+</body>
+</html>
+
+
+
+

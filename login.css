@@ -1,0 +1,129 @@
+*{
+    margin: auto;
+    padding: 0%;
+}
+
+#fullbox {
+    height: 1550px;
+    margin-top: 130px;
+    margin-left: 50px;
+    margin-right: 50px;
+   
+    
+}
+
+#upperbox{
+    margin: auto;
+    height: 320px;
+    background-color: rgb(177, 155, 204);
+   
+}
+
+#farmquote{
+    position: absolute;   /* overlay */
+    top: 170px;
+    left: 250px;
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#childrenimg{
+    position: absolute;   /* overlay */
+    top: 37.6%;             /* move vertically */
+    left: 65%;            /* move horizontally */
+    transform: translate(-50%, -50%);  /* perfect center */
+    height: 240px;
+   
+}
+
+#inputformbox{
+    position: absolute;
+    top: 38%;
+    left: 30%;
+    border: 2px solid white;
+    height: 270px;
+    width: 230px;
+    background-color: rgb(5,38,69);
+
+}
+#inputbox{
+    margin-top: 45px;
+    margin-left: 20px;
+    border-radius: 50px;
+    
+}
+.hinttext{
+    margin: 5px 0;
+    color: aliceblue; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.error{
+
+    color: red;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#signupbox {
+    position: absolute;
+    top: 30px;
+    right: 55px;   
+
+    display: flex;             
+    align-items: center;       
+    justify-content: center;   
+
+    height: 40px;
+    width: 100px;
+
+    background-color: rgb(5,38,69);
+    color:aliceblue;
+
+    text-decoration: none;  
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+#signupbox * {
+    position: relative;
+    z-index: 2;
+}
+
+/* Shine layer */
+#signupbox::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 60%;
+    height: 100%;
+
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,0.8),
+        transparent
+    );
+
+    transform: translateX(-250%) skewX(-25deg);
+    pointer-events: none;
+    z-index: 1;
+
+    animation: shine 3s linear infinite;
+}
+
+/* Animation */
+@keyframes shine {
+    0% {
+        transform: translateX(-250%) skewX(-25deg);
+    }
+
+    40% {
+        transform: translateX(250%) skewX(-25deg);
+    }
+
+    100% {
+        transform: translateX(250%) skewX(-25deg);
+    }
+}
